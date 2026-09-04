@@ -59,7 +59,6 @@ async function callClaude(userPrompt) {
   const msg = await anthropic.messages.create({
     model: MODEL,
     max_tokens: 1500,
-    temperature: 0.3,
     system: SYSTEM_PROMPT,
     messages: [{ role: "user", content: userPrompt }],
   });
