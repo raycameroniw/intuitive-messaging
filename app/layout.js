@@ -16,9 +16,9 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: "Intuitive Messaging — Homepage Grader for Manufacturers",
+  title: "Intuitive Conversion — Funnel Grader for Manufacturers",
   description:
-    "Paste your homepage URL. Get a graded read on how clearly it speaks to an engineer or buyer evaluating you as a supplier. Free, instant, no signup.",
+    "Paste your homepage URL. Get a graded read on whether your site is built to convert a technical buyer, from CTAs to your blog. Free, instant, no signup.",
 };
 
 export default function RootLayout({ children }) {

@@ -6,9 +6,9 @@ import Report from "../components/Report";
 
 const LOADING_STEPS = [
   "Fetching homepage…",
-  "Stripping nav, footer, and scripts…",
-  "Reading hero and top sections…",
-  "Grading against 5 buyer signals…",
+  "Checking for a blog or resources section…",
+  "Reading hero, CTAs, and offers…",
+  "Grading against 5 funnel signals…",
 ];
 
 function useLoadingSteps(active) {
@@ -69,7 +69,7 @@ export default function Page() {
       <header className="titleblock">
         <div className="titleblock__mark">
           <span className="bracket">[</span>
-          <span className="titleblock__name">INTUITIVE MESSAGING</span>
+          <span className="titleblock__name">INTUITIVE CONVERSION</span>
           <span className="bracket">]</span>
         </div>
         <div className="titleblock__meta">
@@ -81,18 +81,18 @@ export default function Page() {
 
       {status !== "done" && (
         <div className="hero">
-          <h1>Would an engineer trust your homepage?</h1>
+          <h1>Is your homepage built to convert, or just to exist?</h1>
           <p>
-            Paste your homepage URL. Get a graded read on whether your
-            messaging speaks to a buyer with a print or an RFQ in hand — or
-            just sounds like every other shop's website.
+            Paste your homepage URL. Get a graded read on whether your site
+            is actually built to move a technical buyer toward a sales
+            conversation — or just sits there looking professional.
           </p>
           <ul className="hero__rubric">
-            <li>Industry specificity</li>
-            <li>Capability specificity</li>
-            <li>Proof &amp; credibility</li>
-            <li>Buyer outcome framing</li>
-            <li>Clear next step</li>
+            <li>Benefit vs. feature framing</li>
+            <li>Bottom-of-funnel CTA</li>
+            <li>Mid-funnel offer</li>
+            <li>Resources section</li>
+            <li>Blog currency &amp; quality</li>
           </ul>
 
           <UrlForm onSubmit={handleSubmit} disabled={status === "loading"} />
@@ -125,7 +125,7 @@ export default function Page() {
       {status === "done" && report && <Report data={report} onReset={reset} />}
 
       <footer className="footer">
-        <span>Intuitive Messaging — built by Intuitive Websites</span>
+        <span>Intuitive Conversion — built by Intuitive Websites</span>
         <a href="https://intuitivewebsites.com" target="_blank" rel="noreferrer noopener">
           intuitivewebsites.com
         </a>

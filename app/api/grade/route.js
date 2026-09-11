@@ -139,5 +139,7 @@ export async function POST(request) {
     signals,
     weakestSignalName: trueWeakest.name,
     rewrite: parsed.rewrite,
+    blogFound: Boolean(extracted.blogLinks?.length),
+    resourcesFound: Boolean(extracted.resourceLinks?.length),
   });
 }

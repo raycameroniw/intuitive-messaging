@@ -57,7 +57,7 @@ export default function Report({ data, onReset }) {
         </div>
 
         <div className="scorehead__data">
-          <div className="scorehead__label">Messaging grade</div>
+          <div className="scorehead__label">Conversion readiness grade</div>
           <div className="scorehead__score" style={{ "--tier-color": tierColor }}>
             {data.totalScore}
             <span>/{data.maxScore}</span>
@@ -84,7 +84,7 @@ export default function Report({ data, onReset }) {
         <div className="rewrite__body">
           <p className="rewrite__text">{data.rewrite}</p>
           <p className="rewrite__hint">
-            Drop-in rewrite. Swap in your own specifics before you ship it.
+            Drop-in fix. Swap in your own specifics before you ship it.
           </p>
         </div>
       </div>
